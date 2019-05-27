@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/server",
+    "module": "commonjs",
+    "lib": ["es5", "es6", "dom"],
+    "emitDecoratorMetadata": true
+  },
+  "include": ["./src/**/*"]
+}
