@@ -1,26 +1,26 @@
-# 🗻 typescript-server
+# 🈚 typescript-server
 
 ## Features
 
 - HTTP server:
 
-  - **Express**
+  1. **Express**
 
 - GraphQL server:
 
-  - **Apollo Server**
+  2. **Apollo Server**
 
 - Database:
 
-  - **PostgreSQL**
+  3. **PostgreSQL**
 
 - Object-relational mapping framework:
 
-  - **TypeORM**
+  4. **TypeORM**
 
 - Data query and manipulation framework:
 
-  - **GraphQL**
+  5. **GraphQL**
 
 ## Directions
 
@@ -28,4 +28,5 @@
 2. Change directory: `cd typescript-server`
 3. Install dependencies: `yarn install` or `npm install`
 4. Create a Postgres database and set your credentials on a `ormconfig.json` file, similar to `ormconfig.example.json`
-5. Run the application: `yarn start` or `npm start`
+5. Run the application: `yarn start` or `npm run start`
+6. Head to `http://localhost:8080/api`
