@@ -22,9 +22,9 @@ const startServer = async () => {
     .then(async connectionOptions => {
       if (process.env.NODE_ENV === "production") {
         Object.assign(connectionOptions, {
-          entities: ["dist/server/database/**/*.model.js"],
+          entities: ["dist/database/**/*.model.js"],
           cli: {
-            entitiesDir: "dist/server/database/entities"
+            entitiesDir: "dist/database/entities"
           }
         });
       }
