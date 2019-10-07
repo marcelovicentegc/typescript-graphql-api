@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc --p tsconfig.server.json",
-    "server": "nodemon",
+    "server": "ts-node --project ./tsconfig.server.json ./src/index.ts",
     "start": "cross-env NODE_ENV=development TCP=8080 yarn run server",
     "upgd": "yarn upgrade-interactive",
     "launch": "cross-env NODE_ENV=production node ./dist/index.js"
@@ -21,7 +21,6 @@
     "@types/node": "^12.7.11",
     "@types/pg": "^7.11.2",
     "cross-env": "^6.0.3",
-    "nodemon": "^1.19.3",
     "rimraf": "^3.0.0",
     "ts-node": "^8.4.1",
     "tslint": "^5.20.0",
