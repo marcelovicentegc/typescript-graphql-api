@@ -24,7 +24,7 @@
 
 ## Demo
 
-<img src="https://github.com/marcelovicentegc/typescript-graphql-api/assets/typescript-graphql-api-demo.gif" />
+<img src="./assets/typescript-graphql-api.gif" />
 
 ## Directions
 
