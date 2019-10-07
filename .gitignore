@@ -3,3 +3,5 @@ ormconfig.json
 dist
 .env
 yarn-error.log
+assets/palette.png
+assets/typescript-graphql-api.webm

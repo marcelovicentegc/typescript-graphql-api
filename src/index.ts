@@ -13,7 +13,7 @@ const startServer = async () => {
   const server = new ApolloServer({
     schema,
     playground: {
-      endpoint: "/api/playground"
+      endpoint: "/api"
     },
     context: ({ req, res }: any) => ({ req, res })
   });

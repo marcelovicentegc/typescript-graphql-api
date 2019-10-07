@@ -1,4 +1,4 @@
-# 🈚 typescript-server
+# 🈚 typescript-graphql-api
 
 ## Features
 
@@ -22,10 +22,14 @@
 
   5. **GraphQL**
 
+## Demo
+
+<img src="https://github.com/marcelovicentegc/typescript-graphql-api/assets/typescript-graphql-api-demo.gif" />
+
 ## Directions
 
-1. Clone this repo: `git clone https://github.com/marcelovicentegc/typescript-server.git`
-2. Change directory: `cd typescript-server`
+1. Clone this repo: `git clone https://github.com/marcelovicentegc/typescript-graphql-api.git`
+2. Change directory: `cd typescript-graphql-api`
 3. Install dependencies: `yarn install` or `npm install`
 4. Create a Postgres database and set your credentials on a `ormconfig.json` file, similar to `ormconfig.example.json`
 5. Run the application: `yarn start` or `npm run start`
