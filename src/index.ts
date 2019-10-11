@@ -5,7 +5,7 @@ import * as express from "express";
 import * as path from "path";
 import "reflect-metadata";
 import { createConnection, getConnectionOptions } from "typeorm";
-import schema from "./schema/schema";
+import { schema } from "./schema/schema";
 
 const port = process.env.TCP;
 

@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
 
-const typeDefs = gql`
+export const typeDefs = gql`
   type Animal {
     id: ID!
     species: String!
@@ -18,5 +18,3 @@ const typeDefs = gql`
     deleteAnimal(id: ID!): Boolean!
   }
 `;
-
-export default typeDefs;

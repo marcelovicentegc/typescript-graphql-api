@@ -2,7 +2,7 @@ import { IResolvers } from "graphql-tools";
 import { getConnection } from "typeorm";
 import { Animal } from "../database/entities/index";
 
-const resolvers: IResolvers = {
+export const resolvers: IResolvers = {
   Query: {
     animal: (_, { id }) => Animal.findOne(id),
     animals: () => Animal.find()
@@ -42,5 +42,3 @@ const resolvers: IResolvers = {
     }
   }
 };
-
-export default resolvers;
