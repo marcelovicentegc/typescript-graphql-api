@@ -10,19 +10,19 @@
 
 - GraphQL server:
 
-  2. **Apollo Server**
+  1. **Apollo Server**
 
 - Database:
 
-  3. **PostgreSQL**
+  1. **PostgreSQL**
 
 - Object-relational mapping framework:
 
-  4. **TypeORM**
+  1. **TypeORM**
 
 - Data query and manipulation framework:
 
-  5. **GraphQL**
+  1. **GraphQL**
 
 ## Demo
 
