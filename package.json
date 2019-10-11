@@ -9,7 +9,6 @@
     "serve": "nodemon",
     "gen": "gql-gen --config codegen.yml",
     "start": "cross-env NODE_ENV=development TCP=8080 yarn serve",
-    "upgd": "yarn upgrade-interactive",
     "launch": "cross-env NODE_ENV=production node ./dist/index.js"
   },
   "devDependencies": {
