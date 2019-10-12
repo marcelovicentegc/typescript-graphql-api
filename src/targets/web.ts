@@ -1,84 +1,91 @@
 export type Maybe<T> = T | null;
 
+
+
+
 // ====================================================
 // Documents
 // ====================================================
 
-export type CreateAnimalVariables = {
-  species: string;
-  favoriteFood: string;
-};
 
-export type CreateAnimalMutation = {
-  __typename?: "Mutation";
 
-  createAnimal: CreateAnimalCreateAnimal;
-};
+  export type CreateAnimalVariables = {
+    species: string;
+    favoriteFood: string;
+  }
 
-export type CreateAnimalCreateAnimal = {
-  __typename?: "Animal";
+  export type CreateAnimalMutation = {
+    __typename?: "Mutation";
+    
+    createAnimal: CreateAnimalCreateAnimal;
+  }
 
-  species: string;
+  export type CreateAnimalCreateAnimal = {
+    __typename?: "Animal";
+    
+    species: string;
+    
+    favoriteFood: string;
+  } 
 
-  favoriteFood: string;
-};
+  export type UpdateAnimalVariables = {
+    id: string;
+    species: string;
+    favoriteFood: string;
+  }
 
-export type UpdateAnimalVariables = {
-  id: string;
-  species: string;
-  favoriteFood: string;
-};
+  export type UpdateAnimalMutation = {
+    __typename?: "Mutation";
+    
+    updateAnimal: boolean;
+  }
 
-export type UpdateAnimalMutation = {
-  __typename?: "Mutation";
+  export type DeleteAnimalVariables = {
+    id: string;
+  }
 
-  updateAnimal: boolean;
-};
+  export type DeleteAnimalMutation = {
+    __typename?: "Mutation";
+    
+    deleteAnimal: boolean;
+  }
 
-export type DeleteAnimalVariables = {
-  id: string;
-};
+  export type GetAnimalVariables = {
+    id: string;
+  }
 
-export type DeleteAnimalMutation = {
-  __typename?: "Mutation";
+  export type GetAnimalQuery = {
+    __typename?: "Query";
+    
+    animal: GetAnimalAnimal;
+  }
 
-  deleteAnimal: boolean;
-};
+  export type GetAnimalAnimal = {
+    __typename?: "Animal";
+    
+    id: string;
+    
+    species: string;
+    
+    favoriteFood: string;
+  } 
 
-export type GetAnimalVariables = {
-  id: string;
-};
+  export type GetAnimalsVariables = {
+  }
 
-export type GetAnimalQuery = {
-  __typename?: "Query";
+  export type GetAnimalsQuery = {
+    __typename?: "Query";
+    
+    animals: GetAnimalsAnimals[];
+  }
 
-  animal: GetAnimalAnimal;
-};
+  export type GetAnimalsAnimals = {
+    __typename?: "Animal";
+    
+    id: string;
+    
+    species: string;
+    
+    favoriteFood: string;
+  } 
 
-export type GetAnimalAnimal = {
-  __typename?: "Animal";
-
-  id: string;
-
-  species: string;
-
-  favoriteFood: string;
-};
-
-export type GetAnimalsVariables = {};
-
-export type GetAnimalsQuery = {
-  __typename?: "Query";
-
-  animals: GetAnimalsAnimals[];
-};
-
-export type GetAnimalsAnimals = {
-  __typename?: "Animal";
-
-  id: string;
-
-  species: string;
-
-  favoriteFood: string;
-};

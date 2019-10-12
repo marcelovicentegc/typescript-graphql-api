@@ -7,11 +7,12 @@
   "scripts": {
     "build": "rimraf dist && tsc --p tsconfig.server.json",
     "serve": "nodemon",
-    "gen": "gql-gen --config codegen.yml",
+    "gen": "wait-on tcp:8080 && gql-gen --config codegen.web.yml && wait-on tcp:8080 && gql-gen --config codegen.android.yml",
     "start": "cross-env NODE_ENV=development TCP=8080 yarn serve",
     "launch": "cross-env NODE_ENV=production node ./dist/index.js"
   },
   "devDependencies": {
+    "@graphql-codegen/kotlin": "^1.8.1",
     "@types/apollo-upload-client": "^8.1.3",
     "@types/connect-redis": "^0.0.11",
     "@types/express": "^4.17.1",
@@ -29,9 +30,11 @@
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.3",
+    "wait-on": "^3.3.0"
   },
   "dependencies": {
+    "@graphql-codegen/cli": "^1.8.1",
     "apollo-cache-inmemory": "^1.6.3",
     "apollo-client": "^2.6.4",
     "apollo-link-error": "^1.1.12",
