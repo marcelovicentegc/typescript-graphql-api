@@ -2,7 +2,7 @@ overwrite: true
 schema: "http://127.0.0.1:8080/api"
 documents: ./src/**/*.graphql.{ts, tsx}
 generates:
-  ./src/__types__/client.ts:
+  ./src/targets/web.ts:
     config:
       noNamespaces: true
     plugins:
