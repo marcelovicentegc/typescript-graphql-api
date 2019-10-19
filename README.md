@@ -1,6 +1,6 @@
 # 🈚 typescript-graphql-api
 
-[![Build Status](https://dev.azure.com/marcelovicentegc/public-pipes/_apis/build/status/marcelovicentegc.typescript-graphql-api?branchName=master)](https://dev.azure.com/marcelovicentegc/public-pipes/_build/latest?definitionId=4&branchName=master)
+[![Build Status](https://dev.azure.com/marcelovicentegc/public-pipes/_apis/build/status/marcelovicentegc.typescript-graphql-api?branchName=master)](https://dev.azure.com/marcelovicentegc/public-pipes/_build/latest?definitionId=4&branchName=master)[![Node CI](https://github.com/marcelovicentegc/typescript-graphql-api/workflows/Node%20CI/badge.svg)](https://github.com/marcelovicentegc/typescript-graphql-api/workflows/Node%20CI/badge.svg)
 
 ## Features
 
