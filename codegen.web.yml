@@ -6,5 +6,4 @@ generates:
     config:
       noNamespaces: true
     plugins:
-      - typescript-common
-      - typescript-client
+      - typescript

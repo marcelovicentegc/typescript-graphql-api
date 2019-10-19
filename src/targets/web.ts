@@ -1,91 +1,52 @@
 export type Maybe<T> = T | null;
+/** All built-in and custom scalars, mapped to their actual values */
+export type Scalars = {
+  ID: string,
+  String: string,
+  Boolean: boolean,
+  Int: number,
+  Float: number,
+};
+
+export type Animal = {
+   __typename?: 'Animal',
+  id: Scalars['ID'],
+  species: Scalars['String'],
+  favoriteFood: Scalars['String'],
+};
+
+export type Mutation = {
+   __typename?: 'Mutation',
+  createAnimal: Animal,
+  updateAnimal: Scalars['Boolean'],
+  deleteAnimal: Scalars['Boolean'],
+};
 
 
+export type MutationCreateAnimalArgs = {
+  species: Scalars['String'],
+  favoriteFood: Scalars['String']
+};
 
 
-// ====================================================
-// Documents
-// ====================================================
+export type MutationUpdateAnimalArgs = {
+  id: Scalars['ID'],
+  species: Scalars['String'],
+  favoriteFood: Scalars['String']
+};
 
 
+export type MutationDeleteAnimalArgs = {
+  id: Scalars['ID']
+};
 
-  export type CreateAnimalVariables = {
-    species: string;
-    favoriteFood: string;
-  }
+export type Query = {
+   __typename?: 'Query',
+  animal: Animal,
+  animals: Array<Animal>,
+};
 
-  export type CreateAnimalMutation = {
-    __typename?: "Mutation";
-    
-    createAnimal: CreateAnimalCreateAnimal;
-  }
 
-  export type CreateAnimalCreateAnimal = {
-    __typename?: "Animal";
-    
-    species: string;
-    
-    favoriteFood: string;
-  } 
-
-  export type UpdateAnimalVariables = {
-    id: string;
-    species: string;
-    favoriteFood: string;
-  }
-
-  export type UpdateAnimalMutation = {
-    __typename?: "Mutation";
-    
-    updateAnimal: boolean;
-  }
-
-  export type DeleteAnimalVariables = {
-    id: string;
-  }
-
-  export type DeleteAnimalMutation = {
-    __typename?: "Mutation";
-    
-    deleteAnimal: boolean;
-  }
-
-  export type GetAnimalVariables = {
-    id: string;
-  }
-
-  export type GetAnimalQuery = {
-    __typename?: "Query";
-    
-    animal: GetAnimalAnimal;
-  }
-
-  export type GetAnimalAnimal = {
-    __typename?: "Animal";
-    
-    id: string;
-    
-    species: string;
-    
-    favoriteFood: string;
-  } 
-
-  export type GetAnimalsVariables = {
-  }
-
-  export type GetAnimalsQuery = {
-    __typename?: "Query";
-    
-    animals: GetAnimalsAnimals[];
-  }
-
-  export type GetAnimalsAnimals = {
-    __typename?: "Animal";
-    
-    id: string;
-    
-    species: string;
-    
-    favoriteFood: string;
-  } 
-
+export type QueryAnimalArgs = {
+  id: Scalars['ID']
+};
