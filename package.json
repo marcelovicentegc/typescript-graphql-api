@@ -8,7 +8,7 @@
     "build": "rimraf dist && tsc --p tsconfig.server.json",
     "serve": "nodemon",
     "gen": "wait-on tcp:8080 && graphql-codegen --config codegen.web.yml && wait-on tcp:8080 && graphql-codegen --config codegen.android.yml",
-    "start": "cross-env NODE_ENV=development TCP=8080 yarn serve",
+    "start": "cross-env NODE_ENV=development TCP=8080 npm run serve",
     "launch": "cross-env NODE_ENV=production node ./dist/index.js"
   },
   "devDependencies": {
