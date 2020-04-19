@@ -1,0 +1,1 @@
+export { animals } from "./animals";

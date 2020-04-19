@@ -1,18 +1,18 @@
 import { IResolvers } from "graphql-tools";
 import { getConnection } from "typeorm";
-import { Animal } from "../database/entities/index";
+import { Animal } from "../../database/entities/index";
 
-export const resolvers: IResolvers = {
+export const animals: IResolvers = {
   Query: {
     animal: (_, { id }) => Animal.findOne(id),
-    animals: () => Animal.find()
+    animals: () => Animal.find(),
   },
   Mutation: {
     createAnimal: async (_, { id, species, favoriteFood }) => {
       const animal = Animal.create({
         id: id,
         species: species,
-        favoriteFood: favoriteFood
+        favoriteFood: favoriteFood,
       });
       await animal.save();
       return animal;
@@ -39,6 +39,6 @@ export const resolvers: IResolvers = {
         return false;
       }
       return true;
-    }
-  }
+    },
+  },
 };
