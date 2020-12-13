@@ -5,11 +5,11 @@ const DEV_MODE = NODE_ENV === "development";
 
 module.exports = {
   type: "postgres",
-  host: DB_HOST,
-  port: DB_PORT,
-  username: DB_USERNAME,
-  password: DB_PASSWORD,
-  database: DB_NAME,
+  host: DB_HOST || "localhost",
+  port: DB_PORT || 5432,
+  username: DB_USERNAME || "postgres",
+  password: DB_PASSWORD || "postgres",
+  database: DB_NAME || "postgres",
   dropSchema: DEV_MODE,
   synchronize: DEV_MODE,
   logging: DEV_MODE,

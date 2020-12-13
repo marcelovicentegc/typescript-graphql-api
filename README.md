@@ -5,29 +5,12 @@
 
 ## Features
 
-- HTTP server:
-
-  1. **Express**
-
-- GraphQL server:
-
-  1. **Apollo Server**
-
-- Database:
-
-  1. **PostgreSQL**
-
-- Object-relational mapping framework:
-
-  1. **TypeORM**
-
-- Data query and manipulation framework:
-
-  1. **GraphQL**
-
-## Demo
-
-<img src="./assets/typescript-graphql-api.gif" />
+- Express
+- Apollo Server
+- TypeORM
+- GraphQL
+- PostgreSQL
+- Redis
 
 ## Directions
 
@@ -39,3 +22,24 @@
 6. Run the application: `npm start`
 7. Navigate to `http://localhost:8080/api`
 8. Make sure the app is up and running before generating the client types (`npm run gen`)
+
+## Configuration
+
+| Environment variable | Default value |
+| -------------------- | ------------- |
+| SESSION_SECRET       | random uuid   |
+| PORT                 | 8080          |
+| APOLLO_ENDPOINT      | /api          |
+| DB_HOST              | localhost     |
+| DB_NAME              | postgres      |
+| DB_USERNAME          | postgres      |
+| DB_PASSWORD          | postgres      |
+| REDIS_HOST           | localhost     |
+| REDIS_PORT           | 6379          |
+| REDIS_PASSWORD       | undefined     |
+| SENTRY_DNS           | undefined     |
+| ENVIRONMENT          | local         |
+
+## Demo
+
+<img src="./assets/typescript-graphql-api.gif" />
