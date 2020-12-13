@@ -1,4 +1,4 @@
 {
   "ext": "ts",
-  "exec": "ts-node --project ./tsconfig.server.json ./src/index.ts"
+  "exec": "ts-node -r dotenv/config --project ./tsconfig.json ./src/index.ts"
 }

@@ -3,11 +3,11 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 @Entity("animal")
 export class Animal extends BaseEntity {
   @PrimaryGeneratedColumn()
-  id: number;
+  public id!: number;
 
   @Column({ nullable: true })
-  species: string;
+  public species!: string;
 
   @Column({ nullable: true })
-  favoriteFood: string;
+  public favoriteFood!: string;
 }
