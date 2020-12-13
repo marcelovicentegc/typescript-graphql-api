@@ -11,6 +11,7 @@
 - GraphQL
 - PostgreSQL
 - Redis
+- Sentry
 
 ## Directions
 
