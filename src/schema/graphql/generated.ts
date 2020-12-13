@@ -47,8 +47,8 @@ export type MutationDeleteAnimalArgs = {
 
 export type Query = {
   __typename?: 'Query';
-  animal: Animal;
-  animals: Array<Animal>;
+  animal?: Maybe<Animal>;
+  animals: Array<Maybe<Animal>>;
 };
 
 
@@ -166,8 +166,8 @@ export type MutationResolvers<ContextType = any, ParentType extends ResolversPar
 };
 
 export type QueryResolvers<ContextType = any, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
-  animal?: Resolver<ResolversTypes['Animal'], ParentType, ContextType, RequireFields<QueryAnimalArgs, 'id'>>;
-  animals?: Resolver<Array<ResolversTypes['Animal']>, ParentType, ContextType>;
+  animal?: Resolver<Maybe<ResolversTypes['Animal']>, ParentType, ContextType, RequireFields<QueryAnimalArgs, 'id'>>;
+  animals?: Resolver<Array<Maybe<ResolversTypes['Animal']>>, ParentType, ContextType>;
 };
 
 export type Resolvers<ContextType = any> = {

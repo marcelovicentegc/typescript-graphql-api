@@ -24,6 +24,6 @@
       "express"
     ],
   },
-  "exclude": ["node_modules", "src/targets/*"],
+  "exclude": ["node_modules", "src/targets/*", "src/schema/graphql/generated.ts"],
   "include": ["./src/**/*"],
 }

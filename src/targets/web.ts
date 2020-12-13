@@ -48,8 +48,8 @@ export type MutationDeleteAnimalArgs = {
 
 export type Query = {
   __typename?: 'Query';
-  animal: Animal;
-  animals: Array<Animal>;
+  animal?: Maybe<Animal>;
+  animals: Array<Maybe<Animal>>;
 };
 
 
@@ -100,10 +100,10 @@ export type GetAnimalQueryVariables = Exact<{
 
 export type GetAnimalQuery = (
   { __typename?: 'Query' }
-  & { animal: (
+  & { animal?: Maybe<(
     { __typename?: 'Animal' }
     & Pick<Animal, 'id' | 'species' | 'favoriteFood'>
-  ) }
+  )> }
 );
 
 export type GetAnimalsQueryVariables = Exact<{ [key: string]: never; }>;
@@ -111,10 +111,10 @@ export type GetAnimalsQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type GetAnimalsQuery = (
   { __typename?: 'Query' }
-  & { animals: Array<(
+  & { animals: Array<Maybe<(
     { __typename?: 'Animal' }
     & Pick<Animal, 'id' | 'species' | 'favoriteFood'>
-  )> }
+  )>> }
 );
 
 
