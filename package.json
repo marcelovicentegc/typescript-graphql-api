@@ -21,7 +21,7 @@
     "launch": "cross-env NODE_ENV=production node ./dist/index.js"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "^1.18.0",
+    "@graphql-codegen/cli": "^3.0.0",
     "@graphql-codegen/kotlin": "^1.17.9",
     "@graphql-codegen/typescript": "^1.17.11",
     "@graphql-codegen/typescript-operations": "^1.17.8",
